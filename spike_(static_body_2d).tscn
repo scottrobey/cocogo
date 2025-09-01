@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://biok2q6s1cro0"]
+
+[ext_resource type="Script" uid="uid://dpqonfbrn0gvv" path="res://spike_area_2d.gd" id="1_j6wwb"]
+[ext_resource type="Texture2D" uid="uid://bjs1njiwr6hn0" path="res://broccoli-nobg.png" id="2_shlob"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_45ilh"]
+size = Vector2(29.5, 78)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_shlob"]
+size = Vector2(56, 79)
+
+[node name="Spike (StaticBody2D)" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -19)
+shape = SubResource("RectangleShape2D_45ilh")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_j6wwb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -19)
+shape = SubResource("RectangleShape2D_shlob")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.9641, -18.5)
+scale = Vector2(0.147557, 0.163223)
+texture = ExtResource("2_shlob")

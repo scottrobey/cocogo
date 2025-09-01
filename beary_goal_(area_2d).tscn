@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://odki4k4m6eh"]
+
+[ext_resource type="Script" uid="uid://rnn4ef1kiv02" path="res://beary_goal_(area_2d).gd" id="1_umu2i"]
+[ext_resource type="Texture2D" uid="uid://bjq5ii1yrak1m" path="res://beary-nobg.png" id="2_umu2i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mt36"]
+size = Vector2(153, 258)
+
+[node name="Beary-Goal (Area2D)" type="Area2D"]
+script = ExtResource("1_umu2i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 3)
+scale = Vector2(0.432961, 0.440577)
+texture = ExtResource("2_umu2i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, 3)
+shape = SubResource("RectangleShape2D_7mt36")

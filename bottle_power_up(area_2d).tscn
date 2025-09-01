@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://c51i3c206hbbg"]
+
+[ext_resource type="Texture2D" uid="uid://d4lsnmft8bnrh" path="res://baby-milk-bottlle-nobg.png" id="1_ghf0l"]
+[ext_resource type="Script" uid="uid://bi142jlquodjh" path="res://bottle_power_up(area_2d).gd" id="1_ueoxq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ueoxq"]
+size = Vector2(393, 596)
+
+[node name="BottlePowerUp(Area2d)" type="Area2D"]
+script = ExtResource("1_ueoxq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ghf0l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(14.5, 1)
+shape = SubResource("RectangleShape2D_ueoxq")

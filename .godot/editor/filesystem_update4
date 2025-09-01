@@ -1,1 +1,4 @@
 res://Player.tscn
+res://beary_goal_(area_2d).gd
+res://spike_area_2d.gd
+res://fall_zone.gd
